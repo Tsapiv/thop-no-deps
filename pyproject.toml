@@ -31,13 +31,9 @@ description = "Ultralytics THOP package for fast computation of PyTorch model FL
 readme = "README.md"
 requires-python = ">=3.8"
 license = { "text" = "AGPL-3.0" }
-keywords = ["FLOPs", "PyTorch", "Model Analysis"]  # Optional
-authors = [
-    { name = "Ligeng Zhu", email = "ligeng.zhu+github@gmail.com" }
-]
-maintainers = [
-    { name = "Ultralytics", email = "hello@ultralytics.com" }
-]
+keywords = ["FLOPs", "PyTorch", "Model Analysis"] # Optional
+authors = [{ name = "Ligeng Zhu", email = "ligeng.zhu+github@gmail.com" }]
+maintainers = [{ name = "Ultralytics", email = "hello@ultralytics.com" }]
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
@@ -59,10 +55,9 @@ classifiers = [
     "Operating System :: MacOS",
     "Operating System :: Microsoft :: Windows",
 ]
-dependencies = [
-    "numpy",
-    "torch",
-]
+dependencies = ["numpy"]
+[project.optional-dependencies]
+platform_dependent = ["torch"]
 
 [project.urls]
 "Homepage" = "https://ultralytics.com"
